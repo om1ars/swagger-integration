@@ -7,8 +7,8 @@ const logger = new Logger('MikroORM');
 const config = {
   entities: ['dist/**/*.entity.js'],
   entitiesTs: ['src/**/*.entity.ts'],
-  dbName: process.env.DBNAME || 'movie-review',
-  type: 'postgresql',
+  dbName: 'movie',
+  type: 'mysql',
   port: process.env.DBPORT || 5432,
   highlighter: new SqlHighlighter(),
   debug: true,
@@ -25,7 +25,7 @@ const config = {
     dropTables: true, // allow to disable table dropping
     safe: true, // allow to disable table and column dropping
     emit: 'ts', // migration generation mode
-  }
+  },
 } as Options;
 
 export default config;

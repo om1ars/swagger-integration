@@ -7,9 +7,9 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('NestJS Tutorial')
-    .setDescription('This is a blog series tutorial.')
-    .setVersion('1.0')
+    .setTitle('Click us')
+    .setDescription('No idea.')
+    .setVersion('2.0')
     .build();
   const document = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('api', app, document);
